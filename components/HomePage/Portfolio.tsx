@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
-import projects from "@/lib/data/EN/projects";
-export default function Portfolio() { 
+import Link from "next/link"; 
+export default function Portfolio({projects}:{projects: Array<any>}) {
+     
     return (
         <section id="portfolio" className="container"> 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-2 sm:space-y-0">
@@ -17,7 +17,6 @@ export default function Portfolio() {
                         /> 
                         <h3 className="mb-0">{project.client.name}</h3>
                         <h4>{project.info.tagline}</h4>
-                        
                     </Link>
                     ))
                 }

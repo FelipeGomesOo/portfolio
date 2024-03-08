@@ -1,10 +1,12 @@
 import Image from "next/image"
 import Link from "next/link" 
+import {useTranslations} from 'next-intl'; 
 export default function NextProject({ project }: any) { 
+    const t = useTranslations('ProjectPage'); 
     return (
         <section className="mt-24 lg:mt-40 pt-6 lg:pt-16 border-t border-primary-light/20 ">
             <Link className="block" href={`/projects/${project.name}`}>
-                <h4 className="container mb-6 ">Next Project</h4>
+                <h4 className="container mb-6 ">{t("next")}</h4>
                 <div className="container grid grid-cols-12 gap-2 items-center ">
                     <div className="col-span-12 lg:col-span-5">
                         <div className="mb-6 md:mb-0">

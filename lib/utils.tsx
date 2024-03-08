@@ -1,5 +1,8 @@
-import projects from "@/lib/data/EN/projects";
-const getProjectData = (projectName: string) => {
+import projectsEN from "@/lib/data/EN/projects";
+import projectsPT from "@/lib/data/PT/projects";
+
+const getProjectData = (projectName: string, locale:string) => {
+    const projects = locale === 'en' ? projectsEN : projectsPT;
     const visibleProjects = projects.filter(project => project.visible === true);
     const currentProjectIndex = visibleProjects.findIndex(project => project.name === projectName); 
     const currentProject = visibleProjects[currentProjectIndex];

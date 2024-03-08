@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link" 
+import {useTranslations} from 'next-intl'; 
 export default function Hero({ project }: any) {
+    const t = useTranslations('ProjectPage');
     const hasDemo = project.info.live ? true : false;
     const hasRepo = project.info.githubRepo ? true : false;
     return (
@@ -18,7 +20,7 @@ export default function Hero({ project }: any) {
                                 className="mr-3" 
                                 href={project.info.live}
                                 target="_blank">
-                                Confira o site
+                                {t("liveButon")}
                             </Link>
                         }
                         {hasRepo && 
@@ -26,7 +28,7 @@ export default function Hero({ project }: any) {
                                 className="inline_link" 
                                 href={project.info.githubRepo} 
                                 target="_blank">
-                                Repositório
+                                {t("githubButon")}
                             </Link>
                         }
                     </div>

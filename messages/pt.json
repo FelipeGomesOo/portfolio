@@ -1,0 +1,62 @@
+{
+    "Locale": {
+      "value": "pt"
+    },
+    "HomePage": {
+      "metaData": {
+        "title": "Felipe Gomes | Designer e Desenvolvedor Front-end",
+        "description": "Eu sou Felipe e trabalho com criação de marcas, design de interfaces digitais e programação front-end. Aqui você também encontra projetos de UX, sinalização e papelaria."
+      },
+      "hero": {
+        "title": "Oi! Me chamo Felipe.",
+        "subtitle": "Eu sou designer e desenvolvedor front-end."
+      },
+      "projects": {
+        "title": "Projetos" 
+      },
+      "about": {
+        "title": "Sobre",
+        "description": "Trabalho com criação de marcas, design de interfaces digitais e programação frontend. Aqui você também encontra projetos de UX, sinalização, papelaria e embalagem.",
+        "xp": {
+          "title": "Experiência",
+          "pos": {
+            "arajara": "Gerente de Marketing",
+            "oowlish": "Frontend Designer",
+            "pds": "Designer Júnior",
+            "piloti": "Designer",
+            "onespacemedia": "Designer"
+          }
+        },
+        "acad": {
+          "title": "Formação Acadêmica",
+          "course": {
+            "01": "MBA em Marketing",
+            "02": "Design da Experiência do Usuário",
+            "03": "Graduação em Design Gráfico"
+          }
+        }
+      },
+      "contact": {
+        "title": "Contato",
+        "see_also": "Outros"
+      }
+    },
+    "ProjectPage": {
+      "title": "O projeto",
+      "client": "Cliente",
+      "services": "Serviços",
+      "industry": "Setor",
+      "location": "Localização",
+      "resources": "Ferramentas",
+      "supervision": "Direção",
+      "liveButon": "Confira o site",
+      "githubButon": "Repositório",
+      "next": "Próximo projeto"
+    },
+    "NotFoundPage": {
+      "title": "Página não encontrada",
+      "description": "Desculpe, a página que você está tentando acessar não existe.",
+      "see_also": "Retornar para página inicial"
+    }
+  }
+  

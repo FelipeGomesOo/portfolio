@@ -1,0 +1,61 @@
+{
+    "Locale": {
+        "value": "en"
+      },
+    "HomePage": {
+        "metaData": {
+            "title": "Felipe Gomes | Front-end designer & front-end developer",
+            "description": "Hello, I'm Felipe, and I specialize in brand creation, digital interface design, and front-end programming. In my portfolio, you'll discover a diverse range of projects, including UX design, signage, and stationery design."
+        },
+        "hero": {
+            "title": "Hello. I'm Felipe.",
+            "subtitle": "I'm a Brazilian interdisciplinary designer & front-end developer."
+        },
+        "projects": {
+            "title": "Work"
+        },
+        "about": {
+            "title": "About",
+            "description": "I work with brand creation, digital interface design and frontend programming. Here you can find UX, signage, paper goods and packaging projects.",
+        "xp": {
+            "title": "Experience",
+            "pos": {
+                "arajara": "Marketing Manager",
+                "oowlish": "Frontend Designer",
+                "pds": "Junior Designer",
+                "piloti": "Designer",
+                "onespacemedia": "Designer"
+            }
+        },
+        "acad": {
+            "title": "Academic Background",
+            "course": {
+                "01": "MBA in Marketing",
+                "02": "User Experience Design",
+                "03": "Graphic Design BA (Hons)"
+            }
+        }
+        },
+        "contact": {
+        "title": "Contact",
+        "see_also": "See also"
+        }
+    },
+    "ProjectPage": {
+        "title": "The assignment",
+        "client": "Client",
+        "services": "Services",
+        "industry": "Industry",
+        "location": "Location",
+        "resources": "Resources",
+        "supervision": "Supervision",
+        "liveButon": "Live version",
+        "githubButon": "Github repo",
+        "next": "Next project"
+    },
+    "NotFoundPage": {
+        "title": "Page not found",
+        "description": "Sorry, the page you are looking for does not exist.",
+        "see_also": "Return to homepage"
+    }
+}

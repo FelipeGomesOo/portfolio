@@ -8,21 +8,22 @@ import { Metadata, ResolvingMetadata } from 'next';
 import NextProject from "@/components/ProjectPage/NextProject"
 
 type Props = {
-  params: { project: string  } 
+  params: { project: string, locale: string } 
 }
 
 export async function generateMetadata( { params }: Props, parent: ResolvingMetadata ): Promise<Metadata> {  
 
-  let project = await getProjectData(params.project).project; 
+  let project = getProjectData(params.project, params.locale).project; 
  
   return {
-    title:  project?.client.name     
+    title:  project?.client.name, 
+    description: project?.info.description,     
   }
 }
 
 export default function Project({ params }: Props) {
-  const project = getProjectData(params.project).project; 
-  const nextProject = getProjectData(params.project).nextProject; 
+  const project = getProjectData(params.project, params.locale).project; 
+  const nextProject = getProjectData(params.project, params.locale).nextProject; 
     return (
         <>
             <Hero project={project}/>

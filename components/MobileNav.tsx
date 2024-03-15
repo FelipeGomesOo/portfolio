@@ -2,8 +2,10 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import { useState } from 'react';
+import LocaleLink from '@/components/LocaleLink';
+ 
 
-export default function MobileNav() {
+export default function MobileNav({work, about, contact}:{work:string, about:string, contact:string} ) { 
     const [menuOpen, setMenuOpen] = useState(false)
 
     const handleClick = () => {
@@ -34,10 +36,24 @@ export default function MobileNav() {
         </button>
         <div className={`${ menuOpen ? 'block' : 'hidden'} sm:hidden fixed w-full left-0 shadow-lg z-10 top-20 h-svh  bg-[#fff]`} id="mobile-menu">
             <div className="space-y-1 container pt-8"> 
-                <h4 className='mb-4'>Menu</h4>
-                <Link href="#" className="block py-2" aria-current="page">Projects</Link>
-                <Link href="#" className="block py-2">About</Link>
-                <Link href="#" className="block py-2">Contact</Link> 
+                <h4 className='mb-4'>Menu</h4> 
+                <h2 className="py-2">
+                    <Link onClick={handleClick} href="/projects">{work}</Link>
+                </h2>
+                <h2 className="py-2">
+                    <Link onClick={handleClick} href="/about">{about}</Link>
+                </h2>
+                <h2 className="py-2">
+                    <Link onClick={handleClick} href="/contact">{contact}</Link>
+                </h2> 
+            </div>
+            <div className="container flex gap-4 border-t border-t-primary-light/20 pt-6 mt-4">
+                <h2 className="font-normal ">
+                    <LocaleLink locale="en" />
+                </h2>
+                <h2 className="font-normal">
+                    <LocaleLink locale="pt" />
+                </h2>
             </div>
         </div>
     </nav>

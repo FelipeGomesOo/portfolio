@@ -53,10 +53,111 @@
       "githubButon": "Repositório",
       "next": "Próximo projeto"
     },
+    "AboutPage": {  
+        "intro":{
+            "title": "Sobre",
+            "p0":"Sou designer e desenvolvedor front-end com mais de 10 anos de atuação na área de comunicação e tecnologia.",
+            "p1": "Trabalhei em times que lançaram aplicações web para clientes como Great Pet Care (Covetrus, EUA), The Anxious Pet (Covetrus, EUA), Arajara Park (CE, Brasil), Ficou Pequeno (RJ, Brasil), Little Brown Mouse (SP, Brasil) e 4A (Porto, Portugal). ",
+            "p2": "Como front-end, tenho expertise em HTML, CSS, Typescript e MySQL. Atualmente utilizo React/Next com Tailwind, Prisma e Postgress. Já meu lado designer domina UX, UI, usabilidade, prototipagem e branding.",
+            "p3": "Estou disponível para trocar idéias e aberto para novos projetos."	
+        }, 
+        "experience": {
+            "title": "Experiência", 
+            "positions": { 
+                "Arajara Park":{
+                    "period": "2020 - 2023",
+                    "position": "Gerente de Marketing",
+                    "description": "Gerenciei projetos, cronogramas e orçamentos do setor de marketing do Arajara Park. Nossas campanhas coordenadas e melhorias de apresentação em pontos de contato chave ampliaram o alcance da marca na região e ajudaram a transmitir ofertas e valores centrais com clareza impactando vendas e relacionamento com clientes.",
+                    "link": "https://www.arajarapark.com.br/" 
+                },
+                "Oowlish":{
+                    "period": "2019 - 2020",
+                    "position": "Frontend Designer",
+                    "description": "Colaborei remotamente no desenvolvimento dos portais Great Pet Care e The Anxious Pet. Personalizamos temas, plugins e widgets no WordPress para atender necessidades alinhadas  diariamente com clientes dos Estados Unidos.",
+                    "link": "https://oowlish.com/"
+                    
+                },
+                "Pé de Sonhos":{
+                    "period": "2013 - 2017",
+                    "position": "Designer e Desenvolvedor",
+                    "description": "Minha atuação abrangeu desde criação e desenvolvimento de websites até participação em projetos diversificados, incluindo sinalização, publicidade impressa, branding, newsletters, email marketing e gestão de redes sociais.",
+                    "link": "https://www.pedesonhos.com.br/"
+                },
+                "Onespacemedia":{
+                    "period": "2013 - 2013",
+                    "position": "Web-designer",
+                    "description": "Fui responsável pela criação de interfaces e programação de sites. Meu foco era transformar conceitos de design em experiências digitais interativas e otimizadas para diferentes dispositivos e navegadores.",
+                    "link": "https://dribbble.com/onespacemedia/"
+                },
+                "Piloti Mobile & Internet":{
+                    "period": "2011 - 2011",
+                    "position": "Web-designer",
+                    "description": "Fui responsável pela criação de interfaces e programação de sites. Implementei soluções interativas com HTML, CSS e jQuery e mantive contato direto com os clientes de setores diversos.",
+                    "link": "https://piloti.com.br/"
+                }
+            }
+        },
+        "academic": {
+            "title": "Formação",
+            "courses": [
+                {
+                "course": "MBA em Marketing",
+                "institution": "ESPM",
+                "year": "2019 - 2021",
+                "location": "São Paulo. SP",
+                "link": "https://drive.google.com/file/d/1_75Uw7J1m208mrY_e0nt3vPWVsKOjh33/view?usp=sharing"
+                },
+                {
+                "course": "User Experience Design",
+                "institution": "General Assembly",
+                "year": "2016",
+                "location": "São Francisco. CA. EUA",
+                "link": "https://drive.google.com/file/d/1tcpddJqf4eTDqPeG7uyJCb_rnxr_BmkH/view"
+                },
+                {
+                "course": "Graphic Design BA (Hons)",
+                "institution": "Anglia Ruskin University",
+                "year": "2012 - 2013",
+                "location": "Cambridge. Inglaterra",
+                "link": "https://drive.google.com/file/d/1ZvJcO-EcRuxXavbWizIudx7nQHBE1ixW/view?usp=sharing"
+                },
+                {
+                "course": "Desenho Industrial",
+                "institution": "Universidade Estácio de Sá",
+                "year": "2009 - 2013",
+                "location": "Rio de Janeiro. RJ",
+                "link": "https://drive.google.com/file/d/1_4rWjx9uxSp2Hmoh0RysLmAvV-hvZ9yY/view?usp=sharing"
+                }
+            ]
+        }, 
+        "skillset":{
+          "title": "Habilidades",
+          "programming": {
+            "title":"Programação",
+            "skills": {
+              "Linguagens":"React, Next, Javascript, HTML5, CSS3, SASS, PHP, MySQL",
+              "Ferramentas": "Git, Github, Wordpress, Visual Studio",
+              "Experiência": "Apps responsivos, Acessibilidade, Build & Deploy, Integração API"
+            }
+          },
+          "design": {
+            "title":"Design",
+            "skills": {
+              "Ferramentas": "Photoshop, AdobeXD, Illustrator, Indesign",
+              "Experiência": "Prototipagem, Cores, Tipografia, Fotografia, Branding, UX, SEO, Design system"
+            }
+          }
+        }
+    },
     "NotFoundPage": {
       "title": "Página não encontrada",
       "description": "Desculpe, a página que você está tentando acessar não existe.",
       "see_also": "Retornar para página inicial"
+    },
+    "Navigation": {
+      "work": "Projetos",
+      "about": "Sobre",
+      "contact": "Contato"
     }
   }
   

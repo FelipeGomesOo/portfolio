@@ -53,9 +53,110 @@
         "githubButon": "Github repo",
         "next": "Next project"
     },
+    "AboutPage": { 
+        "title": "I work with brand creation, digital interface design and frontend programming. Here you can find UX, signage, paper goods and packaging projects.",
+        "intro":{
+            "title": "About me",
+            "p0":"I am a front-end designer and developer with over 10 years of experience in the communication and technology sector.",
+            "p1": "I have worked on teams that launched web applications for clients such as Great Pet Care (Covetrus, USA), The Anxious Pet (Covetrus, USA), Arajara Park (CE, Brazil), Ficou Pequeno (RJ, Brazil), Little Brown Mouse (SP, Brazil), and 4A (Porto, Portugal).",
+            "p2": "As a front-end professional, I possess expertise in HTML, CSS, Typescript, and MySQL. Currently, I utilize React/Next with Tailwind, Prisma, and Postgres. On the design side, I excel in UX, UI, usability, prototyping, and branding.",
+            "p3": "I am open to exchanging ideas and available for new projects."	
+        }, 
+        "experience": {
+            "title": "Experience", 
+            "positions": {
+                "Arajara Park" : {
+                    "period": "2020 - 2023",
+                    "position": "Marketing Manager",
+                    "description": "I managed marketing projects, schedules, and budgets for Arajara Park. Our coordinated campaigns and presentation enhancements at key contact points broadened the brand's regional reach and clearly conveyed core offers and values, impacting sales and customer relationships.",
+                    "link": "https://www.arajarapark.com.br/" 
+                },
+                "Oowlish" : {
+                    "period": "2019 - 2020",
+                    "position": "Frontend Designer",
+                    "description": "I collaborated remotely on the development of the Great Pet Care and The Anxious Pet portals. We customized WordPress themes, plugins, and widgets to meet needs aligned daily with clients in the United States.",
+                    "link": "https://oowlish.com/"
+                },
+                "Pé de Sonhos" : {
+                    "period": "2013 - 2017",
+                    "position": "Designer and Developerr",
+                    "description": "My role spanned from website creation and development to involvement in diverse projects, including signage, print advertising, branding, newsletters, email marketing, and social media management.",
+                    "link": "https://www.pedesonhos.com.br/"
+                },
+                "Onespacemedia" : {
+                    "period": "2013 - 2013",
+                    "position": "Designer and Developer",
+                    "description": "I was responsible for creating interfaces and programming websites. My focus was on transforming design concepts into interactive digital experiences optimized for various devices and browsers.",
+                    "link": "https://dribbble.com/onespacemedia/"
+                },
+                "Piloti Mobile & Internet" : {
+                    "period": "2011 - 2011",
+                    "position": "Designer and Developer",
+                    "description": "I was responsible for creating interfaces and programming websites. I implemented interactive solutions with HTML, CSS, and jQuery and maintained direct contact with clients from various sectors.",
+                    "link": "https://piloti.com.br/"
+                }
+            }
+        },
+        "academic": {
+            "title": "Academic Background",
+            "courses": [
+                {
+                "course": "MBA in Marketing",
+                "institution": "ESPM",
+                "year": "2019 - 2021",
+                "location": "São Paulo. Brasil",
+                "link": "https://drive.google.com/file/d/1_75Uw7J1m208mrY_e0nt3vPWVsKOjh33/view?usp=sharing"
+                },
+                {
+                "course": "User Experience Design",
+                "institution": "General Assembly",
+                "year": "2016",
+                "location": "São Francisco . CA . EUA",
+                "link": "https://drive.google.com/file/d/1tcpddJqf4eTDqPeG7uyJCb_rnxr_BmkH/view"
+                },
+                {
+                "course": "Graphic Design BA (Hons)",
+                "institution": "Anglia Ruskin University",
+                "year": "2012 - 2013",
+                "location": "Anglia Ruskin University Cambridge . UK",
+                "link": "https://drive.google.com/file/d/1ZvJcO-EcRuxXavbWizIudx7nQHBE1ixW/view?usp=sharing"
+                },
+                {
+                "course": "Graphic Design",
+                "institution": "Universidade Estácio de Sá",
+                "year": "2009 - 2013",
+                "location": "Rio de Janeiro . Brasil",
+                "link": "https://drive.google.com/file/d/1_4rWjx9uxSp2Hmoh0RysLmAvV-hvZ9yY/view?usp=sharing"
+                }
+            ]
+        }, 
+        "skillset":{
+          "title": "Skills",
+          "programming": {
+            "title":"Programming",
+            "skills": {
+              "Languages":"React, Next, Javascript, HTML5, CSS3, SASS, PHP, MySQL",
+              "Tools": "Git, Github, Wordpress, Visual Studio",
+              "Experience": "Responsive Apps, Accessibility, Build & Deploy, API Integration" 
+            }
+          },
+          "design": {
+            "title":"Design",
+            "skills": {
+              "Tools": "Photoshop, AdobeXD, Illustrator, Indesign",
+              "Experience": "Prototyping, Colors, Typography, Photography, Branding, UX, SEO, Design System"
+            }
+          }
+        }
+    },
     "NotFoundPage": {
         "title": "Page not found",
         "description": "Sorry, the page you are looking for does not exist.",
         "see_also": "Return to homepage"
+    },
+    "Navigation": {
+        "work": "Work",
+        "about": "About",
+        "contact": "Contact"
     }
 }

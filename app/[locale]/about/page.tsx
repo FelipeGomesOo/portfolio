@@ -1,10 +1,8 @@
 import Experience from '@/components/AboutPage/Experience';
 import Academic from '@/components/AboutPage/Academic';
-import Skillset from '@/components/AboutPage/Skillset';
-import { useTranslations } from 'next-intl';
+import Skillset from '@/components/AboutPage/Skillset'; 
 import Intro from '@/components/AboutPage/Intro';
-export default function About(){
-    const t = useTranslations('AboutPage');  
+export default function About(){ 
     return (
         <div>
             <Intro />

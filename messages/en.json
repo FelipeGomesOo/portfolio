@@ -15,30 +15,9 @@
             "title": "Work"
         },
         "about": {
-            "title": "About",
-            "description": "I work with brand creation, digital interface design and frontend programming. Here you can find UX, signage, paper goods and packaging projects.",
-        "xp": {
-            "title": "Experience",
-            "pos": {
-                "arajara": "Marketing Manager",
-                "oowlish": "Frontend Designer",
-                "pds": "Junior Designer",
-                "piloti": "Designer",
-                "onespacemedia": "Designer"
-            }
-        },
-        "acad": {
-            "title": "Academic Background",
-            "course": {
-                "01": "MBA in Marketing",
-                "02": "User Experience Design",
-                "03": "Graphic Design BA (Hons)"
-            }
-        }
-        },
-        "contact": {
-        "title": "Contact",
-        "see_also": "See also"
+            "title": "About me",
+            "description": "I am a front-end designer and developer with experience in the communication and technology sector. I have been part of teams that launched web applications for clients based in various countries, including the United States, Brazil, and Portugal, across a range of industries.",
+            "cta":"For more information, check out <Link>my resume</Link> detailing my experiences, academic background, and skills." 
         }
     },
     "ProjectPage": {
@@ -158,5 +137,10 @@
         "work": "Work",
         "about": "About",
         "contact": "Contact"
+    },
+    "Contact": {
+        "title": "Contact",
+        "see_also": "See also",
+        "whatsapp": "+55 (21) 99147-4675"
     }
 }

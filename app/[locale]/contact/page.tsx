@@ -1,6 +1,6 @@
-import Contact from '@/components/HomePage/Contact'; 
+import Contact from '@/components/Contact'; 
 
-export default function Home() {   
+export default function ContactPage() {   
 
   return ( 
   <div className=''>

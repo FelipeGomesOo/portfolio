@@ -15,30 +15,9 @@
         "title": "Projetos" 
       },
       "about": {
-        "title": "Sobre",
-        "description": "Trabalho com criação de marcas, design de interfaces digitais e programação frontend. Aqui você também encontra projetos de UX, sinalização, papelaria e embalagem.",
-        "xp": {
-          "title": "Experiência",
-          "pos": {
-            "arajara": "Gerente de Marketing",
-            "oowlish": "Frontend Designer",
-            "pds": "Designer Júnior",
-            "piloti": "Designer",
-            "onespacemedia": "Designer"
-          }
-        },
-        "acad": {
-          "title": "Formação Acadêmica",
-          "course": {
-            "01": "MBA em Marketing",
-            "02": "Design da Experiência do Usuário",
-            "03": "Graduação em Design Gráfico"
-          }
-        }
-      },
-      "contact": {
-        "title": "Contato",
-        "see_also": "Outros"
+        "title": "Sobre mim",
+        "description": "Como designer e desenvolvedor front-end  colaborei em projetos de aplicações web para clientes baseados em países como Estados Unidos, Brasil e Portugal, abrangendo diversas indústrias.",
+        "cta": "Dá uma olhada no <Link>meu currículo</Link> para saber mais sobre minha experiência, formação acadêmica e habilidades." 
       }
     },
     "ProjectPage": {
@@ -158,6 +137,11 @@
       "work": "Projetos",
       "about": "Sobre",
       "contact": "Contato"
+    },
+    "Contact": {
+      "title": "Contato",
+      "see_also": "Outros",
+      "whatsapp": "(21) 99147-4675"
     }
   }
   

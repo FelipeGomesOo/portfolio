@@ -3,8 +3,7 @@ import Contact from '@/components/HomePage/Contact';
 import Portfolio from '@/components/HomePage/Portfolio';
 import Hero from '@/components/HomePage/Hero';
 import projectsEn from "@/lib/data/EN/projects";
-import projectsPT from "@/lib/data/PT/projects";
-import Copyright from '@/components/Copyright';  
+import projectsPT from "@/lib/data/PT/projects"; 
 import {useTranslations} from 'next-intl';
 
 export default function Home() {  
@@ -16,8 +15,7 @@ export default function Home() {
     <Hero />
     <Portfolio projects={projects} /> 
     <About />
-    <Contact />
-    <Copyright />
+    <Contact /> 
   </>
   )
 }

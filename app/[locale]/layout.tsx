@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import Header from '@/components/Header'
 import { Metadata, ResolvingMetadata } from 'next'; 
 import { getTranslations } from 'next-intl/server'
+import Copyright from '@/components/Copyright';
  
 const poppins = Poppins({ 
   subsets: ['latin'],
@@ -31,8 +32,11 @@ export default function LocaleLayout({
   return (
     <html lang={locale} className={poppins.className}>
       <body> 
-        <Header />
-        {children}
+        <div className="flex flex-col h-svh">
+          <Header />
+          <div className="grow flex flex-col justify-center">{children}</div>
+           <Copyright />
+        </div>
       </body>
     </html>
   )

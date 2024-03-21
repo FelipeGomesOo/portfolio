@@ -1,19 +1,17 @@
 import About from '@/components/HomePage/About';
 import Contact from '@/components/Contact';
-import Portfolio from '@/components/HomePage/Portfolio';
-import Hero from '@/components/HomePage/Hero';
-import projectsEn from "@/lib/data/EN/projects";
-import projectsPT from "@/lib/data/PT/projects"; 
-import {useTranslations} from 'next-intl';
-
+import Portfolio from '@/components/Portfolio';
+import Hero from '@/components/HomePage/Hero';  
+import { Suspense } from 'react';
+ 
 export default function Home() {  
-  const l = useTranslations('Locale'); 
-  const projects = l('value') === 'en' ? projectsEn : projectsPT;
 
   return ( 
   <>
-    <Hero />
-    <Portfolio projects={projects} /> 
+    <Hero /> 
+    <Suspense fallback={<div>Loading...</div>}>
+      <Portfolio filterable={false} limit={6} />
+    </Suspense>
     <About />
     <Contact /> 
   </>

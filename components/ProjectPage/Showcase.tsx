@@ -41,8 +41,10 @@ export default function Showcase({ project }: any) {
                                     className={`col-span-12 ${getColSpan(thumb.size)}`}
                                     key={index}>
                                     <Image
-                                        src={thumb.src}
-                                        alt={thumb.alt}
+                                        src={`/project-galleries/${project.name}/${thumb.src}`}
+                                        alt={thumb.alt ? thumb.alt : project.client.name}
+                                        width={thumb.w}
+                                        height={thumb.h}
                                     />
                                     {
                                     thumb.hasOwnProperty('alt') &&

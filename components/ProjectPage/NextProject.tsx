@@ -21,7 +21,7 @@ export default function NextProject({ project }: any) {
                         <Image
                             width ={984}
                             height={570} 
-                            src={project.info.mainImage}
+                            src={`/project-main-img/${project.name}.jpg`} 
                             alt={project.client.name}
                         />
                     </div>
@@ -30,7 +30,7 @@ export default function NextProject({ project }: any) {
                         <Image
                             width ={984}
                             height={570} 
-                            src={project.info.mainImage}
+                            src={`/project-main-img/${project.name}.jpg`} 
                             alt={project.client.name}
                         />
                     </div>

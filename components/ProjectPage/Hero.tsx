@@ -34,20 +34,20 @@ export default function Hero({ project }: any) {
                     </div>
                 </div>
                 <div className="hidden sm:block col-span-12 lg:col-span-7">
-                    <Image 
-                        width ={984} 
-                        height={570} 
-                        className="shadow-md" 
-                        src={project.info.mainImage} 
-                        alt="Jamming" 
-                    />
+                        <Image
+                            width ={984}
+                            height={570}
+                            className="shadow-md"
+                            src={`/project-main-img/${project.name}.jpg`}
+                            alt="Jamming"
+                        />
                 </div>
             </div>
             <div className="sm:hidden ">
                 <Image 
                     width ={984} 
                     height={570}  
-                    src={project.info.mainImage} 
+                    src={`/project-main-img/${project.name}.jpg`} 
                     alt={project.client.name}
                 />
             </div>

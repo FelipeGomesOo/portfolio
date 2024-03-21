@@ -1,5 +1,3 @@
-import Image from "next/image"
-import Link from "next/link"
 import Hero from "@/components/ProjectPage/Hero"
 import Summary from "@/components/ProjectPage/Summary"
 import Showcase from "@/components/ProjectPage/Showcase"
@@ -13,7 +11,7 @@ type Props = {
 
 export async function generateMetadata( { params }: Props, parent: ResolvingMetadata ): Promise<Metadata> {  
 
-  let project = getProjectData(params.project, params.locale).project; 
+  let {project} = await getProjectData(params.project, params.locale); 
  
   return {
     title:  project?.client.name, 
@@ -21,9 +19,8 @@ export async function generateMetadata( { params }: Props, parent: ResolvingMeta
   }
 }
 
-export default function Project({ params }: Props) {
-  const project = getProjectData(params.project, params.locale).project; 
-  const nextProject = getProjectData(params.project, params.locale).nextProject; 
+export default async function Project({ params }: Props) {
+  const {project, nextProject} = await getProjectData(params.project, params.locale)   
     return (
         <>
             <Hero project={project}/>

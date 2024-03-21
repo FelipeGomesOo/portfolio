@@ -142,5 +142,10 @@
         "title": "Contact",
         "see_also": "See also",
         "whatsapp": "+55 (21) 99147-4675"
+    },
+    "Portfolio": {
+      "title": "Projects",
+      "see_also": "See all projects",
+      "all": "All" 
     }
 }

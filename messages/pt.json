@@ -11,9 +11,6 @@
         "title": "Oi! Me chamo Felipe.",
         "subtitle": "Eu sou designer e desenvolvedor front-end."
       },
-      "projects": {
-        "title": "Projetos" 
-      },
       "about": {
         "title": "Sobre mim",
         "description": "Como designer e desenvolvedor front-end  colaborei em projetos de aplicações web para clientes baseados em países como Estados Unidos, Brasil e Portugal, abrangendo diversas indústrias.",
@@ -142,6 +139,11 @@
       "title": "Contato",
       "see_also": "Outros",
       "whatsapp": "(21) 99147-4675"
+    },
+    "Portfolio": {
+      "title": "Projetos",
+      "see_also": "Veja todos os projetos",
+      "all": "Todos"
     }
   }
   

@@ -6,10 +6,14 @@ import {
 export const locales = ['en', 'pt'] as const;
 export const localePrefix = 'always'; 
 export const pathnames = { 
-  '/': '/', 
+  '/': '/',
   '/about': {
     en: '/about',
     pt: '/sobre'
+  },
+  '/contact': {
+    en: '/contact',
+    pt: '/contato'
   },
   '/projects/[project]': {
     en: '/projects/[project]',

@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import { Suspense } from 'react'
+import {Link} from '@/navigation'; 
 export default function PortfolioProjects({projects}: {projects: Array}){
     return (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-2 sm:space-y-0"> 

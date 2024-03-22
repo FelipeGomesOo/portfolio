@@ -1,8 +1,7 @@
-"use client";
-import Image from 'next/image'
-import Link from 'next/link';
+"use client"; 
+import {Link} from '@/navigation';
 import { useState } from 'react';
-import LocaleLink from '@/components/LocaleLink';
+import LocaleLink from '@/components/LocaleSwitcher';
  
 
 export default function MobileNav({work, about, contact}:{work:string, about:string, contact:string} ) { 
@@ -47,12 +46,9 @@ export default function MobileNav({work, about, contact}:{work:string, about:str
                     <Link onClick={handleClick} href="/contact">{contact}</Link>
                 </h2> 
             </div>
-            <div className="container flex gap-4 border-t border-t-primary-light/20 pt-6 mt-4">
-                <h2 className="font-normal ">
-                    <LocaleLink locale="en" />
-                </h2>
-                <h2 className="font-normal">
-                    <LocaleLink locale="pt" />
+            <div className="container  border-t border-t-primary-light/20 pt-6 mt-4">
+                <h2 className="font-normal flex gap-4">
+                    <LocaleLink />
                 </h2>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Link from "next/link" 
+import {Link} from '@/navigation';
 import {useTranslations} from 'next-intl'; 
 export default function Hero({ project }: any) {
     const t = useTranslations('ProjectPage');

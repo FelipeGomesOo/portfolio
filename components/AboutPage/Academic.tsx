@@ -12,7 +12,7 @@ export default function Academic(){
                     <div className="col-span-12 lg:col-span-8 grid grid-cols-6 gap-6 lg:gap-8">
                         { positionKeys.map((key: any) => {
                             return( 
-                                <div className="col-span-12 lg:col-span-3">
+                                <div key={key} className="col-span-12 lg:col-span-3">
                                     <h4>{p(`${key}.year`)}</h4>
                                     <h3 className='mb-0'> 
                                         <Link target='_blank' href={p(`${key}.link`)}>

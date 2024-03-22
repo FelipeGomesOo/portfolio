@@ -18,12 +18,8 @@ const getNextProjectIndex = (totalProjects: number, currentProjectIndex: number)
 };
 
 const fetchPortfolioData = async (lang: string) => {
-    let data; 
-    if (lang === 'pt') {
-        data = (await import('@/lib/data/PT/projects')).default;
-    } else {
-        data = (await import('@/lib/data/EN/projects')).default;
-    }
+    let data = (await import(`@/lib/data/${lang}/projects`)).default;
+     
     data = data.filter(project => project.visible);
     return data;
 }

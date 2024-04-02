@@ -1,9 +1,7 @@
-import {locales} from '@/navigation';
-import LocaleButton from '@/components/LocaleButton';
+import { useLocale } from "next-intl";
+import LocaleButton from "@/components/LocaleButton";
 
-export default function LocaleSwitcher( ) {
-  return (
-    locales.map((locale: string) => (
-      <LocaleButton key={locale} locale={locale}  /> 
-    ))  
-)}
+export default function LocaleSwitcher({ className }: { className: string }) {
+  let locale = useLocale() === "pt" ? "en" : "pt";
+  return <LocaleButton key={locale} locale={locale} className={className} />;
+}

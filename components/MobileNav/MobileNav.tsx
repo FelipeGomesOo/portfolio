@@ -1,8 +1,8 @@
 "use client";
-import { useState } from "react";
 import MenuIcon from "@/components/MenuIcon";
 import MobileNavContent from "./MobileNavContent";
 import { createPortal } from "react-dom";
+import { useEffect, useState } from "react";
 
 export default function MobileNav({
   work,
@@ -13,6 +13,11 @@ export default function MobileNav({
   about: string;
   contact: string;
 }) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   const [menuOpen, setMenuOpen] = useState(false);
   const handleClick = () => {
     setMenuOpen(!menuOpen);
@@ -21,16 +26,17 @@ export default function MobileNav({
   return (
     <nav className="lg:hidden">
       <MenuIcon onClick={handleClick} menuOpen={menuOpen} />
-      {createPortal(
-        <MobileNavContent
-          work={work}
-          about={about}
-          contact={contact}
-          onClose={handleClick}
-          menuOpen={menuOpen}
-        />,
-        document.body,
-      )}
+      {isClient &&
+        createPortal(
+          <MobileNavContent
+            work={work}
+            about={about}
+            contact={contact}
+            onClose={handleClick}
+            menuOpen={menuOpen}
+          />,
+          document.body,
+        )}
     </nav>
   );
 }

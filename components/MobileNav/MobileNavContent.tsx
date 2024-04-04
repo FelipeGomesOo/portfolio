@@ -1,3 +1,4 @@
+"use client";
 import LocaleLink from "@/components/LocaleSwitcher";
 import NavigationLink from "@/components/NavigationLink";
 import MenuIcon from "@/components/MenuIcon";

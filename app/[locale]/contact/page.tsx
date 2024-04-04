@@ -14,7 +14,7 @@ export default function Contact({
   return (
     <>
       <section className="container pt-[40%] lg:pt-[15%]">
-        <h1 style={animationDelay(1)} className="reveal md:pb-24">
+        <h1 style={animationDelay(1)} className="reveal md:pb-10">
           {t("titlePage")}
         </h1>
         <div>

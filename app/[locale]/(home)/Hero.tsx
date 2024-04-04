@@ -5,7 +5,7 @@ import { animationDelay } from "@/lib/utils";
 export default function Hero() {
   const t = useTranslations("HomePage");
   return (
-    <section className="fade-out-down container h-[55vh] sm:h-[85vh]">
+    <section className="fade-out-down container h-[80svh] sm:h-[85svh]  ">
       <h1 style={animationDelay(1)} className="reveal">
         {t("hero.subtitle")}
       </h1>

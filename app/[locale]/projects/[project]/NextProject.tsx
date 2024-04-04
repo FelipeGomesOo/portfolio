@@ -22,7 +22,7 @@ export default function NextProject({ project }: { project: Project }) {
         </div>
         <div className="fade-in sm:container ">
           <div className="relative h-[30svh] overflow-hidden ">
-            <img
+            <Image
               width={984}
               height={570}
               src={`/project-main-img/${project.name}.jpg`}

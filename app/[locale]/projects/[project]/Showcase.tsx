@@ -52,7 +52,7 @@ export default function Showcase({ project }: { project: Project }) {
                       className={`col-span-12 ${getColSpan(thumb.size)} text-center`}
                       key={index}
                     >
-                      <img
+                      <Image
                         src={`/project-galleries/${project.name}/${thumb.src}`}
                         alt={thumb.alt ? thumb.alt : project.client.name}
                         width={Number(thumb.w) ?? 50}

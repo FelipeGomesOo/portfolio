@@ -20,7 +20,7 @@ export default function PortfolioProjects({
               }}
             >
               <div className="relative block overflow-hidden ">
-                <img
+                <Image
                   className="transition-all duration-500 ease-in-out md:group-hover:scale-105  "
                   src={`/project-thumbs/${project.name}.jpg`}
                   alt={project.client.name}

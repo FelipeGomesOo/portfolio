@@ -17,7 +17,7 @@ export default function Hero({ project }: { project: Project }) {
         </div>
       </div>
       <div className="sm:container">
-        <img
+        <Image
           width={984}
           height={570}
           style={animationDelay(3)}

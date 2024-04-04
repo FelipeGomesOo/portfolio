@@ -19,9 +19,10 @@ export default function MenuIcon({ onClick, menuOpen }: any) {
     <button
       onClick={onClick}
       type="button"
-      className="relative inline-flex flex-col items-center justify-center p-2 focus:outline-none"
+      className="reveal relative inline-flex flex-col items-center justify-center p-2 focus:outline-none"
       aria-controls="mobile-menu"
       aria-expanded="false"
+      style={animationDelay(1)}
     >
       <span className="absolute -inset-0.5"></span>
       <span className="sr-only">Open main menu</span>

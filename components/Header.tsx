@@ -44,13 +44,7 @@ export default function Header() {
           </div>
           <LocaleSwitcher className="reveal" />
         </nav>
-        <div className="reveal" style={animationDelay(1)}>
-          <MobileNav
-            work={t("work")}
-            about={t("about")}
-            contact={t("contact")}
-          />
-        </div>
+        <MobileNav work={t("work")} about={t("about")} contact={t("contact")} />
       </div>
     </header>
   );

@@ -98,7 +98,7 @@ const projectsData: Project[] = [
     cathegory: "code",
     client: {
       name: "Jamming",
-      site: "http://www.felipe-gomes.com/jamming/",
+      site: "https://felipegomesoo.github.io/react-jamming/",
       sector: "Music",
     },
     info: {
@@ -108,7 +108,7 @@ const projectsData: Project[] = [
         "Jamming allows users to search the Spotify library, create a personalized playlist, and save it to their Spotify account. Originally developed for study and practice in the Codecademy Front-End Engineer course, additional functionalities were implemented beyond the project specifications.",
       services: ["UI Design", "Front-end"],
       tools: ["React", "HTML", "SASS", "Javascript"],
-      live: "http://www.felipe-gomes.com/jamming/",
+      live: "https://felipegomesoo.github.io/react-jamming/",
       githubRepo: "https://github.com/FelipeGomesOo/react-jamming",
     },
     sections: [
@@ -174,7 +174,7 @@ const projectsData: Project[] = [
     cathegory: "code",
     client: {
       name: "Find my Hat",
-      site: "http://www.felipe-gomes.com/findMyHat/",
+      site: "https://felipegomesoo.github.io/find-my-hat/",
       sector: "Video Game",
     },
     info: {
@@ -184,7 +184,7 @@ const projectsData: Project[] = [
         '"Find My Hat" is a game where the objective is to locate a hat without falling into traps. The scenario is generated automatically and randomly at each start, providing a unique experience with every playthrough. Originally conceived as part of a JavaScript and Node.js study in the Codecademy Front-End Developer course, the project evolved and was implemented in React so that it could be played directly in the browser.',
       services: ["UI Design", "Front-end"],
       tools: ["React", "HTML", "SASS", "Javascript"],
-      live: "http://www.felipe-gomes.com/findMyHat/",
+      live: "https://felipegomesoo.github.io/find-my-hat/",
       githubRepo: "https://github.com/FelipeGomesOo/find-my-hat",
     },
     sections: [

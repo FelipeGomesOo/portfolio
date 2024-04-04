@@ -98,7 +98,7 @@ const projectsData: Project[] = [
     cathegory: "code",
     client: {
       name: "Jamming",
-      site: "http://www.felipe-gomes.com/jamming/",
+      site: "https://felipegomesoo.github.io/react-jamming/",
       sector: "Música",
     },
     info: {
@@ -109,7 +109,7 @@ const projectsData: Project[] = [
         "O jamming permite ao usuário pesquisar na biblioteca do Spotify, criar uma playlist personalizada e salvá-la em sua conta do Spotify. Inicialmente foi desenvolvido para fins de estudo e prática no curso Front-End Engineer da Codecademy, no entanto, foram implementadas funcionalidades que não estavam listadas no projeto.",
       services: ["UI Design", "Front-end"],
       tools: ["React", "HTML", "SASS", "Javascript"],
-      live: "http://www.felipe-gomes.com/jamming/",
+      live: "https://felipegomesoo.github.io/react-jamming/",
       githubRepo: "https://github.com/FelipeGomesOo/react-jamming",
     },
     sections: [
@@ -175,7 +175,7 @@ const projectsData: Project[] = [
     cathegory: "code",
     client: {
       name: "Find my Hat",
-      site: "http://www.felipe-gomes.com/findMyHat/",
+      site: "https://felipegomesoo.github.io/find-my-hat/",
       sector: "Video Game",
     },
     info: {
@@ -185,7 +185,7 @@ const projectsData: Project[] = [
         '"Find My Hat" é um jogo onde o objetivo é localizar um chapéu sem cair em armadilhas. O cenário é gerado automaticamente e aleatoriamente a cada início, proporcionando uma experiência única a cada jogada. Inicialmente concebido como parte de um estudo de javascript e node.js do curso Front-End Developer da Codecademy, o projeto evoluiu e foi implementado em React de modo que pudesse ser jogado diretamente no navegador.',
       services: ["UI Design", "Front-end"],
       tools: ["React", "HTML", "SASS", "Javascript"],
-      live: "http://www.felipe-gomes.com/findMyHat/",
+      live: "https://felipegomesoo.github.io/find-my-hat/",
       githubRepo: "https://github.com/FelipeGomesOo/find-my-hat",
     },
     sections: [

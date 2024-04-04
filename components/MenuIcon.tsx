@@ -1,41 +1,25 @@
-export default function MenuIcon({ onClick, menuOpen }: any) {
-  const menuIcon = menuOpen ? (
-    <svg
-      className="h-10 w-10"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      aria-hidden="true"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M6 18L18 6M6 6l12 12"
-      />
-    </svg>
-  ) : (
-    <svg
-      className="h-10 w-10"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      aria-hidden="true"
-    >
-      <path
-        d="M2 9 L22 9 M2 15 L22 15"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
+import { animationDelay } from "@/lib/utils";
 
+export default function MenuIcon({ onClick, menuOpen }: any) {
+  const menuIcon = (
+    <>
+      <div
+        className={`${menuOpen ? "translate-y-[3px] rotate-45" : "translate-y-[-3px]"} h-[3px] w-10 origin-center rounded-full bg-primary-light transition delay-[1900ms] duration-300 ease-in-out `}
+      >
+        &nbsp;
+      </div>
+      <div
+        className={`${menuOpen ? "translate-y-[0px] -rotate-45" : "translate-y-[3px]"} h-[3px] w-10 origin-center rounded-full bg-primary-light transition delay-[1900ms] duration-300 ease-in-out `}
+      >
+        &nbsp;
+      </div>
+    </>
+  );
   return (
     <button
       onClick={onClick}
       type="button"
-      className="text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-white relative inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset "
+      className="relative inline-flex flex-col items-center justify-center p-2 focus:outline-none"
       aria-controls="mobile-menu"
       aria-expanded="false"
     >

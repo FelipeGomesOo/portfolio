@@ -1,5 +1,5 @@
 import { Link } from "@/navigation";
-import MobileNav from "@/components/MobileNav";
+import MobileNav from "@/components/MobileNav/MobileNav";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import Logo from "@/components/Logo";
@@ -9,7 +9,7 @@ import { animationDelay } from "@/lib/utils";
 export default function Header() {
   const t = useTranslations("Navigation");
   return (
-    <header className=" absolute top-0 z-50 w-full ">
+    <header className=" absolute top-0 z-20 w-full ">
       <div className="container flex h-24 items-center  md:h-28 xl:h-32">
         <Link
           style={animationDelay(0)}
@@ -44,7 +44,13 @@ export default function Header() {
           </div>
           <LocaleSwitcher className="reveal" />
         </nav>
-        <MobileNav work={t("work")} about={t("about")} contact={t("contact")} />
+        <div className="reveal" style={animationDelay(1)}>
+          <MobileNav
+            work={t("work")}
+            about={t("about")}
+            contact={t("contact")}
+          />
+        </div>
       </div>
     </header>
   );

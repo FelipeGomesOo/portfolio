@@ -16,11 +16,11 @@ export default function Showcase({ project }: { project: Project }) {
   return (
     <section className="container space-y-8 lg:space-y-16">
       {project.sections.map((section, index) => {
-        let divider = section.thumbs
-          ? section.thumbs.length === 1
+        let divider = section.type
+          ? section.type === 1
             ? "col-span-12 lg:col-span-6"
             : "col-span-12"
-          : "";
+          : "col-span-12";
 
         return (
           <div
@@ -33,17 +33,59 @@ export default function Showcase({ project }: { project: Project }) {
                 <h3>{section.subtitle}</h3>
               )}
             </div>
+            {section.html && (
+              <div
+                className="col-span-12 flex flex-col gap-10 lg:flex-row"
+                dangerouslySetInnerHTML={{ __html: section.html }}
+              ></div>
+            )}
             {section.video && (
-              <div className="">
-                <iframe
+              <div className="col-span-12">
+                <video
+                  style={{ clipPath: "inset(2px 2px)" }}
+                  className="aspect-video w-full  "
                   width={section.video.width}
                   height={section.video.height}
-                  src={section.video.src}
-                  title={section.video.title}
-                  allowFullScreen={true}
-                />
+                  preload="auto"
+                  playsInline
+                  loop
+                  autoPlay
+                  muted
+                >
+                  <source
+                    src={`/project-galleries/${project.name}/${section.video.src}`}
+                    type="video/mp4"
+                  />
+                  Seu browser não suppor o elemento <code>video</code>.
+                </video>
               </div>
             )}
+            {section.videos &&
+              section.videos.map((video, index) => {
+                return (
+                  <div
+                    className={`col-span-12 ${getColSpan(video.size)} text-center`}
+                  >
+                    <video
+                      style={{ clipPath: "inset(2px 2px)" }}
+                      className=" w-full  "
+                      width={video.width}
+                      height={video.height}
+                      preload="auto"
+                      playsInline
+                      loop
+                      autoPlay
+                      muted
+                    >
+                      <source
+                        src={`/project-galleries/${project.name}/${video.src}`}
+                        type="video/mp4"
+                      />
+                      Seu browser não suppor o elemento <code>video</code>.
+                    </video>
+                  </div>
+                );
+              })}
             <div className={`${divider} grid grid-cols-12 gap-6`}>
               {section.thumbs &&
                 section.thumbs.map((thumb, index) => {

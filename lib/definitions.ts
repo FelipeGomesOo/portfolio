@@ -33,14 +33,17 @@ export interface Video {
   width: number;
   height: number;
   src: string;
-  title: string;
+  size: number;
 }
 
 export interface Section {
-  title: string;
-  thumbs: Thumbs[];
+  title?: string;
+  thumbs?: Thumbs[];
   subtitle?: string;
   video?: Video;
+  videos?: Video[];
+  type?: number;
+  html?: any;
 }
 
 export interface Project {

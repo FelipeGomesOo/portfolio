@@ -3,90 +3,85 @@ import { Project } from "@/lib/definitions";
 const projectsData: Project[] = [
   {
     name: "primavera-dos-paes",
-    visible: false,
+    visible: true,
     cathegory: "design",
     client: {
       name: "Primavera dos Pães",
-      site: "http://www.primaveradospaes.com.br/",
+      site: "https://primaveradospaes.com.br/",
       sector: "Padaria",
       location: "Rio de Janeiro, RJ",
     },
     info: {
-      tagline: "Branding",
-      shortDescription: "Marca para a Primavera dos Pães",
+      tagline: "Site institucional",
+      shortDescription: "Headless CMS para Padaria Artesanal Orgânica do Rio.",
       description:
-        "A Primavera dos Pães é uma padaria artesanal que produz pães de fermentação natural, brioches e biscoitos com ingredientes orgânicos e nacionais",
-      services: ["UI Design", "Front-end"],
-      tools: ["Branding", "Papelaria", "Sinalização"],
+        "Desenvolvi um novo site com sistema de gerenciamento de conteúdo personalizado para Primavera dos Pães, uma padaria artesanal orgânica do Rio de Janeiro. O site antigo apresentava problemas de performance, o conteúdo não contemplava detalhes sobre as lojas e os produtos e o gerenciamento do conteúdo precisava de uma divisão mais simples para facilitar a gestão.",
+      services: ["UI Design", "Front-end", "CMS"],
+      tools: ["Next.js", "GraphQl", "Tailwind", "Typescript", "Wordpress"],
+      live: "https://primaveradospaes.com.br/",
+      githubRepo: "https://github.com/FelipeGomesOo/primavera-dos-paes",
     },
     sections: [
       {
-        title: "Propostas",
-        thumbs: [
-          {
-            src: "opt_01.jpg",
-            alt: "Opção 01 - Caligráfica com simbolo do balão",
-            size: 4,
-          },
-          {
-            src: "opt_02.jpg",
-            alt: "Opção 02 - Alusão a fotografia dos pés",
-            size: 4,
-          },
-          {
-            src: "opt_03.jpg",
-            alt: "Opção 03 - Símbolo do frame + abelha",
-            size: 4,
-          },
-        ],
+        title: "Objetivos o projeto",
+        html: " <div class='flex-1 w-full'><p>Criar uma experiência digital para o catálogo de produtos e lojas físicas, enquanto comunicamos os valores da padaria.</p></div><div class='flex-1 w-full'><p>Aprimorar a performance do site com base nos padrões do Google Core Web Vitals, garantindo uma navegação rápida e eficiente.</p></div><div class='flex-1 w-full'><p>Simplificar o gerenciamento do conteúdo do site, permitindo atualizações diretas e intuitivas, sem a necessidade de conhecimento técnico.</p></div>",
       },
       {
-        title: "Construção da marca",
-        thumbs: [
-          {
-            src: "construcao_01.jpg",
-            alt: "Quem nunca viu uma dessas no instagram?",
-            size: 4,
-          },
-          {
-            src: "construcao_02.jpg",
-            alt: "Representação à lápis",
-            size: 4,
-          },
-          {
-            src: "construcao_03.jpg",
-            alt: 'Cores "abelhudas" Amarelo + Marrom',
-            size: 4,
-          },
-          {
-            src: "01.jpg",
-            alt: "Versão final horizontal",
-            size: 12,
-          },
-        ],
+        title: "O projeto se dividiu em 3 partes",
+        html: " <div class='flex-1 w-full'><h4>UI Design</h4><p>Propomos uma interface que acomoda um baita acervo de imagens da padaria para ajudar o visitante a entender a Primavera, não apenas através das fotos exuberantes de seus produtos artesanais, mas através das pessoas, dos ambientes e dos processos.</p></div><div class='flex-1 w-full'><h4>Front-end</h4><p> Para uma boa performance escolhemos Next.js e hospedamos o front na Vercel. O conteúdo é carregado via API do Wordpress utilizando GraphQl, gerado estaticamente, mas atualizado de forma incremental (ISR) pelo Next. Animações, grids e responsividade ficaram por conta do Tailwind. </p></div> <div class='flex-1 w-full'><h4>Gerenciamento de Conteúdo</h4> <p>Criamos seções e campos personalizados no Wordpress para que a equipe da padaria se sinta segura para editar à vontade todo o conteúdo do site. A seleção de imagens e composição de textos é quase toda feita por eles. Sou suspeito, mas acho que eles estão de parabéns. </p></div>",
       },
       {
-        title: "Aplicações",
-        thumbs: [
+        video: {
+          width: 1500,
+          height: 842,
+          src: "primavera-video-01.mp4",
+          size: 12,
+        },
+      },
+      {
+        video: {
+          width: 1500,
+          height: 842,
+          src: "primavera-video-02.mp4",
+          size: 12,
+        },
+      },
+      {
+        video: {
+          width: 1500,
+          height: 842,
+          src: "primavera-video-03.mp4",
+          size: 12,
+        },
+      },
+
+      {
+        video: {
+          width: 1500,
+          height: 842,
+          src: "primavera-video-wordpress.mp4",
+          size: 12,
+        },
+      },
+      {
+        videos: [
           {
-            src: "06.jpg",
-            size: 6,
+            width: 1920,
+            height: 1080,
+            src: "phone-01.mp4",
+            size: 4,
           },
           {
-            src: "05.jpg",
-            size: 6,
+            width: 1920,
+            height: 1080,
+            src: "phone-02.mp4",
+            size: 4,
           },
           {
-            src: "04.jpg",
-            size: 6,
-          },
-          {
-            src: "07.jpg",
-            size: 6,
-          },
-          {
-            src: "03.jpg",
-            size: 12,
+            width: 1920,
+            height: 1080,
+            src: "phone-03.mp4",
+            size: 4,
           },
         ],
       },
@@ -258,6 +253,7 @@ const projectsData: Project[] = [
         title: "Como fazer a girafinha caber na palma da mão?",
         subtitle:
           "Organizarmos a jornada do usuário em 13 fluxos de aproximadamente 170 telas. Desde o cadastro, carrinho de compras, busca, casdatro de produto, gestão dos vendas, troca de mensagens. Ufa.",
+        type: 1,
         thumbs: [
           {
             src: "fp.jpg",
@@ -743,6 +739,7 @@ const projectsData: Project[] = [
         title: "Marca Anterior",
         subtitle:
           "Havia uma percepção de que os tipos caligráficos não refletiam os valores do escritório. Além disso, é importante esclarecer que, após o início do projeto, houve uma mudança na composição do quadro societário, resultando na transição de 'Fernandes & Przewodowski Advocacia' para 'Bureau Przewodowski Advocacia'",
+        type: 1,
         thumbs: [
           {
             src: "marca-antiga.jpg",

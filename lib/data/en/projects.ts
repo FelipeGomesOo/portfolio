@@ -3,90 +3,85 @@ import { Project } from "@/lib/definitions";
 const projectsData: Project[] = [
   {
     name: "primavera-dos-paes",
-    visible: false,
+    visible: true,
     cathegory: "design",
     client: {
       name: "Primavera dos Pães",
-      site: "http://www.primaveradospaes.com.br/",
-      sector: "Padaria",
-      location: "Rio de Janeiro, RJ",
+      site: "http://primaveradospaes.com.br/",
+      sector: "Bakery",
+      location: "Rio de Janeiro, Brazil",
     },
     info: {
-      tagline: "Branding",
-      shortDescription: "Marca para a Primavera dos Pães",
+      tagline: "Corporate website",
+      shortDescription: "Headless CMS for Organic Artisan Bakery in Rio.",
       description:
-        "A Primavera dos Pães é uma padaria artesanal que produz pães de fermentação natural, brioches e biscoitos com ingredientes orgânicos e nacionais",
-      services: ["UI Design", "Front-end"],
-      tools: ["Branding", "Papelaria", "Sinalização"],
+        "I developed a new website with a custom content management system for Primavera dos Pães, an organic artisan bakery in Rio de Janeiro. The old site had performance issues, the content did not include details about the stores and products, and the content management needed a simpler division to facilitate management.",
+      services: ["UI Design", "Front-end", "CMS"],
+      tools: ["Next.js", "GraphQl", "Tailwind", "Typescript", "Wordpress"],
+      live: "https://primaveradospaes.com.br/",
+      githubRepo: "https://github.com/FelipeGomesOo/primavera-dos-paes",
     },
     sections: [
       {
-        title: "Propostas",
-        thumbs: [
-          {
-            src: "opt_01.jpg",
-            alt: "Opção 01 - Caligráfica com simbolo do balão",
-            size: 4,
-          },
-          {
-            src: "opt_02.jpg",
-            alt: "Opção 02 - Alusão a fotografia dos pés",
-            size: 4,
-          },
-          {
-            src: "opt_03.jpg",
-            alt: "Opção 03 - Símbolo do frame + abelha",
-            size: 4,
-          },
-        ],
+        title: "Project goals",
+        html: " <div class='flex-1 w-full'><p>Create a digital experience for the product catalog and physical stores, while communicating the bakery’s values. </p></div><div class='flex-1 w-full'><p>Improve the website’s performance based on Google Core Web Vitals standards, ensuring fast and efficient navigation. </p></div><div class='flex-1 w-full'><p>Simplify the website’s content management, allowing for direct and intuitive updates, without the need for technical knowledge.</p></div>",
       },
       {
-        title: "Construção da marca",
-        thumbs: [
-          {
-            src: "construcao_01.jpg",
-            alt: "Quem nunca viu uma dessas no instagram?",
-            size: 4,
-          },
-          {
-            src: "construcao_02.jpg",
-            alt: "Representação à lápis",
-            size: 4,
-          },
-          {
-            src: "construcao_03.jpg",
-            alt: 'Cores "abelhudas" Amarelo + Marrom',
-            size: 4,
-          },
-          {
-            src: "01.jpg",
-            alt: "Versão final horizontal",
-            size: 12,
-          },
-        ],
+        title: "The project was divided into 3 parts:",
+        html: " <div class='flex-1 w-full'><h4>UI Design</h4><p>We proposed an interface that accommodates a vast collection of bakery images to help visitors understand Primavera, not just through the exuberant photos of its artisanal products, but through the people, environments, and processes.</p></div><div class='flex-1 w-full'><h4>Front-end</h4><p>For good performance, we chose Next.js and hosted the front-end on Vercel. The content is loaded via the WordPress API using GraphQL, statically generated, but incrementally updated (ISR) by Next. Animations, grids, and responsiveness were handled by Tailwind.</p></div> <div class='flex-1 w-full'><h4>Content Management</h4><p> We created sections and custom fields in WordPress so that the bakery team feels confident to freely edit all the website content. The selection of images and composition of texts is almost entirely done by them. I may be biased, but I think they deserve congratulations.</p></div>",
       },
       {
-        title: "Aplicações",
-        thumbs: [
+        video: {
+          width: 1500,
+          height: 842,
+          src: "primavera-video-01.mp4",
+          size: 12,
+        },
+      },
+      {
+        video: {
+          width: 1500,
+          height: 842,
+          src: "primavera-video-02.mp4",
+          size: 12,
+        },
+      },
+      {
+        video: {
+          width: 1500,
+          height: 842,
+          src: "primavera-video-03.mp4",
+          size: 12,
+        },
+      },
+
+      {
+        video: {
+          width: 1500,
+          height: 842,
+          src: "primavera-video-wordpress.mp4",
+          size: 12,
+        },
+      },
+      {
+        videos: [
           {
-            src: "06.jpg",
-            size: 6,
+            width: 1920,
+            height: 1080,
+            src: "phone-01.mp4",
+            size: 4,
           },
           {
-            src: "05.jpg",
-            size: 6,
+            width: 1920,
+            height: 1080,
+            src: "phone-02.mp4",
+            size: 4,
           },
           {
-            src: "04.jpg",
-            size: 6,
-          },
-          {
-            src: "07.jpg",
-            size: 6,
-          },
-          {
-            src: "03.jpg",
-            size: 12,
+            width: 1920,
+            height: 1080,
+            src: "phone-03.mp4",
+            size: 4,
           },
         ],
       },
@@ -256,6 +251,7 @@ const projectsData: Project[] = [
         title: "So how do we fit a giraffe in the palm of our hand?",
         subtitle:
           "We organized the user's journey on 13 flows of approximately 170 screens. We are talking registration, shopping cart, search, product registration, sales management, messaging. Phew!",
+        type: 1,
         thumbs: [
           {
             src: "fp.jpg",
@@ -732,6 +728,7 @@ const projectsData: Project[] = [
         title: "Previous brand",
         subtitle:
           "There was a sense that the calligraphic fonts didn't represent the values of the office. It's important to clarify that, in addition to the new positioning, there was a change in the ownership structure after the project began. As a result, 'Fernandes & Przewodowski Advocacia' transitioned to 'Bureau Przewodowski Advocacia.'",
+        type: 1,
         thumbs: [
           {
             src: "marca-antiga.jpg",
@@ -1118,5 +1115,4 @@ const projectsData: Project[] = [
     ],
   },
 ];
-
 export default projectsData;

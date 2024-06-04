@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "@/app/globals.css";
 import { Poppins } from "next/font/google";
 import Header from "@/components/Header";
@@ -39,6 +40,7 @@ export default function LocaleLayout({
   unstable_setRequestLocale(locale);
   return (
     <html lang={locale} className={poppins.variable}>
+      <GoogleAnalytics gaId="G-WGMPLBYVCL" />
       <body>
         <Header />
         <main className="">{children}</main>

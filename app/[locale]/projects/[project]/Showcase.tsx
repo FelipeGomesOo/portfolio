@@ -64,6 +64,7 @@ export default function Showcase({ project }: { project: Project }) {
               section.videos.map((video, index) => {
                 return (
                   <div
+                    key={index}
                     className={`col-span-12 ${getColSpan(video.size)} text-center`}
                   >
                     <video
